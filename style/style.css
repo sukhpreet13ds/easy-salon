@@ -1185,7 +1185,7 @@ body {
     top: 0;
     width: 25.5%;
     height: 100%;
-    background-color: #002253;
+    background-color: #FFC5CB;
     transform: translateY(-120%) scale(1);
     /* Positioned further up to hide radius */
     border-radius: 50%;
@@ -1223,7 +1223,7 @@ body {
 
 .feature-card:hover .feature-title,
 .feature-card:hover .feature-desc {
-    color: #FFFFFF !important;
+    color: #000000d7 !important;
     cursor: pointer;
 }
 
