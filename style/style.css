@@ -1329,8 +1329,7 @@ body.modal-open .mobile-bottom-bar {
     text-decoration: none;
     opacity: 0;
     transform: translateX(60px);
-    transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
-    transition-delay: calc(var(--i) * 0.12s + 0.3s);
+    transition: all 0.4s ease-in-out;
 }
 
 .mobile-nav-overlay.active .mobile-social-links a {
@@ -1537,7 +1536,7 @@ body.modal-open .mobile-bottom-bar {
     width: 200%;
     height: 400px;
     pointer-events: none;
-    z-index: 10;
+    z-index: 0;
     display: flex;
     align-items: flex-end;
     animation: cloudsFlowLoop 40s linear infinite;
