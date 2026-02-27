@@ -1636,11 +1636,11 @@ body.modal-open .mobile-bottom-bar {
 }
 
 .brands-headline {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 600;
     color: #002253;
     margin-bottom: -45px;
-    line-height: 30px;
+    line-height: 41px;
     font-family: var(--font-inter);
 }
 
