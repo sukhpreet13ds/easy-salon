@@ -24,7 +24,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar shadow-sm navbar-container">
+   <nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar shadow-sm navbar-container">
         <div class="container-fluid ">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/logo.png" alt="Easy Salon Logo" class="logo-img">
@@ -275,382 +275,278 @@
     </div>
 
 
-    <section class="hero-section">
-        <div class="hero-container">
-            <div class="hero-left">
-                <h1 class="hero-heading">
-                    Next-Gen Intelligent Salon Management Software
-                </h1>
-                <p class="hero-subtext">
-                    All-in-One Smart Salon Management Platform for Seamless Automation of Client Bookings, Billing,
-                    Staff, Inventory, and Customer Engagement, Powered by WhatsApp & Built for Modern Multi-Branch
-                    Salons.
 
+
+
+
+
+
+
+
+
+
+
+<section class="easy-ai-section" id="easyAiSection">
+
+    <!-- ══════════════════════════════════
+         AI LOADER — 2-second reveal screen
+    ══════════════════════════════════ -->
+    <div class="ai-page-loader" id="aiPageLoader">
+        <div class="ai-loader-circuit">
+            <!-- Animated SVG circuit lines -->
+            <svg class="circuit-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+                <!-- Horizontal lines -->
+                <path class="c-path" d="M0 80 H260 Q280 80 280 100 V140 Q280 160 300 160 H800" stroke="#FF9FA1" fill="none" stroke-width="1.5"/>
+                <path class="c-path" d="M0 200 H120 Q140 200 140 220 V260 Q140 280 160 280 H800" stroke="#002253" fill="none" stroke-width="1.2"/>
+                <path class="c-path" d="M0 320 H380 Q400 320 400 300 V240 Q400 220 420 220 H800" stroke="#FF9FA1" fill="none" stroke-width="1"/>
+                <path class="c-path" d="M0 140 H500 Q520 140 520 120 V100 Q520 80 540 80 H800" stroke="#4a90d9" fill="none" stroke-width="1.2"/>
+                <path class="c-path" d="M0 360 H200 Q220 360 220 340 V300 Q220 280 240 280 H800" stroke="#FF9FA1" fill="none" stroke-width="0.8"/>
+                <!-- Vertical connections -->
+                <path class="c-path c-path--delay-1" d="M400 0 V160 Q400 180 380 180 H200 Q180 180 180 200 V400" stroke="#002253" fill="none" stroke-width="1"/>
+                <path class="c-path c-path--delay-2" d="M600 0 V80 Q600 100 620 100 H700 Q720 100 720 120 V400" stroke="#FF9FA1" fill="none" stroke-width="1.2"/>
+                <!-- Nodes (circles at junctions) -->
+                <circle class="c-node" cx="280" cy="140" r="5" fill="#FF9FA1"/>
+                <circle class="c-node" cx="140" cy="260" r="4" fill="#002253"/>
+                <circle class="c-node" cx="400" cy="220" r="5" fill="#FF9FA1"/>
+                <circle class="c-node" cx="540" cy="100" r="4" fill="#4a90d9"/>
+                <circle class="c-node" cx="600" cy="80"  r="5" fill="#FF9FA1"/>
+                <circle class="c-node" cx="400" cy="180" r="4" fill="#002253"/>
+                <circle class="c-node" cx="220" cy="340" r="3" fill="#FF9FA1"/>
+            </svg>
+        </div>
+
+        <!-- Central boot panel -->
+        <div class="ai-loader-panel">
+            <div class="ai-loader-icon">
+                <!-- Custom AI Neural Network SVG Icon -->
+                <svg class="ai-loader-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="aiCoreB" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.95"/>
+                            <stop offset="45%" stop-color="#FF9FA1"/>
+                            <stop offset="100%" stop-color="#001838"/>
+                        </radialGradient>
+                        <radialGradient id="aiGlowB" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%"  stop-color="#FF9FA1" stop-opacity="0.14"/>
+                            <stop offset="100%" stop-color="#FF9FA1" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <!-- Ambient glow -->
+                    <circle cx="24" cy="24" r="23" fill="url(#aiGlowB)"/>
+                    <!-- Outer dashed ring (rotates CW via CSS) -->
+                    <circle class="svg-ring-outer" cx="24" cy="24" r="21"
+                        stroke="#FF9FA1" stroke-width="1" stroke-dasharray="4 2.5" stroke-opacity="0.65"/>
+                    <!-- Mid dashed ring (rotates CCW via CSS) -->
+                    <circle class="svg-ring-mid" cx="24" cy="24" r="14"
+                        stroke="#4a90d9" stroke-width="0.8" stroke-dasharray="2 3" stroke-opacity="0.5"/>
+                    <!-- 6 outer nodes (r=18 from centre) —  Top, TR, BR, Bot, BL, TL -->
+                    <g class="svg-nodes-outer">
+                        <circle cx="24"    cy="6"    r="2.5" fill="#FF9FA1" opacity="0.9"/>
+                        <circle cx="39.6"  cy="15"   r="2"   fill="#4a90d9" opacity="0.85"/>
+                        <circle cx="39.6"  cy="33"   r="2"   fill="#FF9FA1" opacity="0.75"/>
+                        <circle cx="24"    cy="42"   r="2.5" fill="#4a90d9" opacity="0.9"/>
+                        <circle cx="8.4"   cy="33"   r="2"   fill="#FF9FA1" opacity="0.75"/>
+                        <circle cx="8.4"   cy="15"   r="2"   fill="#4a90d9" opacity="0.85"/>
+                    </g>
+                    <!-- Lines outer node → inner node -->
+                    <line x1="24"   y1="8.5"  x2="24"   y2="13"   stroke="rgba(255,159,161,.5)" stroke-width="1"/>
+                    <line x1="37.7" y1="16.1" x2="33.5" y2="18.5" stroke="rgba(74,144,217,.5)" stroke-width="1"/>
+                    <line x1="37.7" y1="31.9" x2="33.5" y2="29.5" stroke="rgba(255,159,161,.45)" stroke-width="1"/>
+                    <line x1="24"   y1="39.5" x2="24"   y2="35"   stroke="rgba(74,144,217,.5)" stroke-width="1"/>
+                    <line x1="10.3" y1="31.9" x2="14.5" y2="29.5" stroke="rgba(255,159,161,.45)" stroke-width="1"/>
+                    <line x1="10.3" y1="16.1" x2="14.5" y2="18.5" stroke="rgba(74,144,217,.5)" stroke-width="1"/>
+                    <!-- Inner hexagon nodes (r=11 from centre) -->
+                    <circle cx="24"   cy="13"   r="1.8" fill="rgba(255,159,161,.75)"/>
+                    <circle cx="33.5" cy="18.5" r="1.8" fill="rgba(74,144,217,.7)"/>
+                    <circle cx="33.5" cy="29.5" r="1.8" fill="rgba(255,159,161,.7)"/>
+                    <circle cx="24"   cy="35"   r="1.8" fill="rgba(74,144,217,.75)"/>
+                    <circle cx="14.5" cy="29.5" r="1.8" fill="rgba(255,159,161,.7)"/>
+                    <circle cx="14.5" cy="18.5" r="1.8" fill="rgba(74,144,217,.7)"/>
+                    <!-- Inner hex outline -->
+                    <polygon points="24,13 33.5,18.5 33.5,29.5 24,35 14.5,29.5 14.5,18.5"
+                        fill="rgba(255,159,161,.03)" stroke="rgba(255,159,161,.22)" stroke-width="0.8"/>
+                    <!-- Spokes from inner nodes to core edge -->
+                    <line x1="24"   y1="14.8" x2="24"   y2="18.5" stroke="rgba(255,159,161,.28)" stroke-width="0.8"/>
+                    <line x1="31.9" y1="19.3" x2="28.7" y2="21.2" stroke="rgba(74,144,217,.28)" stroke-width="0.8"/>
+                    <line x1="31.9" y1="28.7" x2="28.7" y2="26.8" stroke="rgba(255,159,161,.28)" stroke-width="0.8"/>
+                    <line x1="24"   y1="33.2" x2="24"   y2="29.5" stroke="rgba(74,144,217,.28)" stroke-width="0.8"/>
+                    <line x1="16.1" y1="28.7" x2="19.3" y2="26.8" stroke="rgba(255,159,161,.28)" stroke-width="0.8"/>
+                    <line x1="16.1" y1="19.3" x2="19.3" y2="21.2" stroke="rgba(74,144,217,.28)" stroke-width="0.8"/>
+                    <!-- Central glowing orb -->
+                    <circle cx="24" cy="24" r="6"   fill="url(#aiCoreB)"/>
+                    <circle cx="22" cy="22" r="1.8" fill="white" opacity="0.35"/>
+                </svg>
+            </div>
+            <div class="ai-loader-brand">
+                <span class="ai-loader-easy">EASY</span>
+                <span class="ai-loader-ai-text">AI</span>
+            </div>
+            <p class="ai-loader-status" id="aiLoaderStatus">Initialising neural engine…</p>
+            <div class="ai-loader-bar-wrap">
+                <div class="ai-loader-bar" id="aiLoaderBar"></div>
+            </div>
+            <p class="ai-loader-pct" id="aiLoaderPct">0%</p>
+        </div>
+
+        <!-- Corner bracket decorations -->
+        <span class="ai-corner ai-corner--tl"></span>
+        <span class="ai-corner ai-corner--tr"></span>
+        <span class="ai-corner ai-corner--bl"></span>
+        <span class="ai-corner ai-corner--br"></span>
+    </div>
+
+    <!-- ══════════════════════════════════
+         ANIMATED BACKGROUND
+    ══════════════════════════════════ -->
+    <div class="ai-hero-bg">
+        <!-- Floating orbs -->
+        <div class="ai-orb ai-orb--1"></div>
+        <div class="ai-orb ai-orb--2"></div>
+        <div class="ai-orb ai-orb--3"></div>
+        <div class="ai-orb ai-orb--4"></div>
+        <!-- Dot grid overlay -->
+        <div class="ai-dot-grid"></div>
+        <!-- Animated diagonal streaks -->
+        <div class="ai-streak ai-streak--1"></div>
+        <div class="ai-streak ai-streak--2"></div>
+        <div class="ai-streak ai-streak--3"></div>
+        <!-- Floating particles (JS-generated) -->
+        <canvas class="ai-particle-canvas" id="aiCanvas"></canvas>
+    </div>
+
+    <!-- ══════════════════════════════════
+         HERO CONTENT (hidden until loader done)
+    ══════════════════════════════════ -->
+    <div class="ai-hero-content" id="aiHeroContent">
+        <div class="container">
+
+            <!-- Title block -->
+            <div class="ai-hero-title-block">
+                
+                <h1 class="ai-hero-heading">
+                    Smart Automation<br>
+                    <span class="ai-heading-accent">Appointment Dashboard</span>
+                </h1>
+                <p class="ai-hero-desc">
+                    Our AI engine analyses real-time salon data — tracking bookings, client behaviour, service trends,
+                    and staff performance — so you can focus on what matters most: delivering  experiences.
                 </p>
-                <div class="hero-cta">
-                    <button class="btn-try-easy" data-bs-toggle="modal" data-bs-target="#ModalTogglesix">Try Easy
-                        Software<span></span><span></span><span></span><span></span></button>
-                    <button class="btn-live-demo" data-bs-toggle="modal" data-bs-target="#videoModal">
-                        See It In Action
-                        <span class="demo-arrow">
-                            <i class="fa-solid fa-play"></i>
+                <div class="ai-btn-wrap">
+                    <button class="ai-explore-btn" data-bs-toggle="modal" data-bs-target="#ModalTogglesix">
+                        <span class="btn-glow"></span>
+                        <span class="btn-content">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Explore AI Demo
                         </span>
+                        <span class="btn-border"></span>
                     </button>
                 </div>
             </div>
 
-            <div class="hero-right">
-                <div class="dashboard-scene">
-
-
-                    <div class="dashboard-peek dashboard-peek--top">
-                        <img src="assets/Dashboard.png" alt="upper dashboard" aria-hidden="true"
-                            class="dashboard-peek-img  dashboard-peek-img--bottom">
-                    </div>
-
-                    <div class="dashboard-main" id="dashboardMain">
-                        <img src="assets/dashboard-3.png" alt="Easy Salon Dashboard" class="dashboard-main-img">
-
-                        <div class="dashboard-overlay-animation">
-
-                            <div class="scan-line"></div>
-
-
-                            <div class="message-animation-container">
-                                <img src="assets/message-1.png" alt="Check-in 1" class="dash-msg msg-1">
-                                <img src="assets/message-2.png" alt="Check-in 2" class="dash-msg msg-2">
-                                <img src="assets/message-3.png" alt="Check-in 3" class="dash-msg msg-3">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="dashboard-peek dashboard-peek--bottom">
-                        <img src="assets/Dashboard.png" alt="Lower Dashboard" aria-hidden="true"
-                            class="dashboard-peek-img dashboard-peek-img--top">
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <section class="cloud-box-section">
-        <div class="cloud-box-top">
-            <div class="container feature-container">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="feature-card scroll-animate zoom-in">
-                            <h3 class="feature-title">Appointment</h3>
-                            <p class="feature-desc">
-
-                                Appointment Management enables convenient 24/7 bookings via WhatsApp, online, or
-                                in-store. Real-time sync, automated reminders, smart staff allocation reduce no-shows,
-                                improve customer satisfaction, streamline operations, while integrations with billing &
-                                CRM boost efficiency and revenue.
-
-                            </p>
-                            <span></span><span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="feature-card scroll-animate zoom-in">
-                            <h3 class="feature-title">Instant Check-In</h3>
-                            <p class="feature-desc">Instant Check-In enables customers to check in quickly via QR codes
-                                or secure links, eliminating queues while reducing front-desk workload. With live
-                                updates, tamper-proof attendance tracking, plus seamless integration with appointments &
-                                billing, it enhances operational efficiency and elevates customer satisfaction.</p>
-                            <span></span><span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="feature-card scroll-animate zoom-in">
-                            <h3 class="feature-title">Browse Our Offers & Gallery</h3>
-                            <p class="feature-desc">The Showcase feature lets businesses seamlessly showcase services,
-                                promotions & brand highlights through images or videos. Quickly update and share via
-                                WhatsApp or booking links to boost upselling, strengthen brand trust & maintain
-                                consistent promotions across branches, driving conversions.
-                            </p>
-                            <span></span><span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="feature-card scroll-animate zoom-in">
-                            <h3 class="feature-title">Client Feedback Hub</h3>
-                            <p class="feature-desc">Client Feedback Hub automates effortless feedback collection via
-                                email, text, or WhatsApp, helping businesses build trust, showcase credibility & attract
-                                new clients. Centralised tracking enhances visibility, pinpoints areas of strength and
-                                weakness, safeguards reputation, promotes long-term growth & client loyalty.</p>
-                            <span></span><span></span><span></span><span></span>
-                        </div>
+             <!-- Table block -->
+            <div class="ai-table-section">
+                <div class="ai-table-header">
+                    <div class="ai-table-right">
+                        <span class="ai-live-dot"></span>
+                        <span class="ai-live-label">Live</span>
                     </div>
                 </div>
 
-                <div class="qr-cta-wrapper">
-                    <div
-                        class="qr-cta-box d-flex align-items-center justify-content-between flex-wrap scroll-animate fade-up">
-                        <div class="qr-content d-flex align-items-center">
-                            <div class="qr-image-placeholder">
-                                <img src="assets/qr-scan.gif" alt="QR Scanner" class="qr-main-img">
-                            </div>
-                            <div class="qr-text-info">
-                                <h3 class="qr-title">Scan Easy Salon QR Code</h3>
-                                <p class="qr-subtitle">Say Goodbye to Mobile App Fees, Keep Every Penny!</p>
-                            </div>
-                        </div>
-                        <div class="qr-button-wrap">
-                            <button class="btn-demo btn-qr" data-bs-toggle="modal" data-bs-target="#ModalTogglesix">
-                                See How It Works
-                                <span></span><span></span><span></span><span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <!-- Horizontal scroll ONLY on table -->
+                <div class="ai-table-scroll-wrap">
+                    <table class="ai-data-table col1-highlight" id="aiDataTable">
+                        <thead>
+                            <tr>
+                                <th><i class="fa-solid fa-user-circle"></i> Client Name</th>
+                                <th><i class="fa-solid fa-scissors"></i> Service</th>
+                                <th><i class="fa-solid fa-calendar-alt"></i> Appointment</th>
+                                <th><i class="fa-solid fa-circle-dot"></i> Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#FF9FA1">P</span>Priya Sharma</td>
+                                <td>Hair Colour + Blow-Dry</td>
+                                <td>12 Mar 2026 · 10:00 AM</td>
+                                <td><span class="ai-status ai-status--confirmed">Confirmed</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#4a90d9">R</span>Rajesh Patel</td>
+                                <td>Beard Trim + Facial</td>
+                                <td>12 Mar 2026 · 11:30 AM</td>
+                                <td><span class="ai-status ai-status--pending">Pending</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#a855f7">A</span>Anjali Verma</td>
+                                <td>Keratin Treatment</td>
+                                <td>12 Mar 2026 · 12:00 PM</td>
+                                <td><span class="ai-status ai-status--confirmed">Confirmed</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#10b981">M</span>Mohammed Raza</td>
+                                <td>Waxing Full Body</td>
+                                <td>12 Mar 2026 · 01:00 PM</td>
+                                <td><span class="ai-status ai-status--inprogress">In Progress</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#f59e0b">S</span>Sneha Kapoor</td>
+                                <td>Manicure + Pedicure</td>
+                                <td>12 Mar 2026 · 02:00 PM</td>
+                                <td><span class="ai-status ai-status--confirmed">Confirmed</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#ef4444">D</span>David Menon</td>
+                                <td>Head Massage + Steam</td>
+                                <td>12 Mar 2026 · 02:45 PM</td>
+                                <td><span class="ai-status ai-status--cancelled">Cancelled</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#FF9FA1">N</span>Nisha Joshi</td>
+                                <td>Bridal Makeup Package</td>
+                                <td>12 Mar 2026 · 03:30 PM</td>
+                                <td><span class="ai-status ai-status--confirmed">Confirmed</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#002253">K</span>Karan Malhotra</td>
+                                <td>Hair Cut + Styling</td>
+                                <td>12 Mar 2026 · 04:15 PM</td>
+                                <td><span class="ai-status ai-status--pending">Pending</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#06b6d4">L</span>Leena Fernandes</td>
+                                <td>Anti-Ageing Facial</td>
+                                <td>12 Mar 2026 · 05:00 PM</td>
+                                <td><span class="ai-status ai-status--inprogress">In Progress</span></td>
+                            </tr>
+                            <tr class="ai-row">
+                                <td><span class="ai-client-avatar" style="--av:#e879f9">T</span>Tarun Singh</td>
+                                <td>Spa Day — Full Package</td>
+                                <td>12 Mar 2026 · 05:45 PM</td>
+                                <td><span class="ai-status ai-status--confirmed">Confirmed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /ai-table-scroll-wrap -->
+            </div><!-- /ai-table-section -->
 
-            <div class="clouds-overlay">
-                <img src="assets/cloud-1.png" class="cloud-asset cloud-1" alt="Cloud 1">
-                <img src="assets/cloud-2.png" class="cloud-asset cloud-2" alt="Cloud 2">
-                <img src="assets/cloud-1.png" class="cloud-asset cloud-3" alt="Cloud 3">
-                <img src="assets/cloud-1.png" class="cloud-asset cloud-1-loop" alt="Cloud 1">
-                <img src="assets/cloud-2.png" class="cloud-asset cloud-2-loop" alt="Cloud 2">
-                <img src="assets/cloud-1.png" class="cloud-asset cloud-3-loop" alt="Cloud 3">
-            </div>
         </div>
+    </div><!-- /ai-hero-content -->
 
-        <div class="cloud-box-bottom">
-            <div class="container text-center">
-                <h4 class="brands-headline scroll-animate drop-down">
-
-                    Empowering 3,000+ Businesses <br>
-                    Across 125+ Cities Worldwide
-                </h4>
-
-                <div class="brands-slider-container scroll-animate fade-up">
-                    <div class="brands-slider-row row-1" data-direction="rtl">
-                        <div class="brands-slider-track">
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/tanzania-flag.png" class="country-flag"><span
-                                        class="country-name">Tanzania</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-2.jpeg" class="brand-logo-img" alt="brand one salon"></div>
-                            </div>
-                            
-                           
-                            <div class="brand-unit row-2-style">
-                                    <div class="brand-card"><img src="assets/brand-333.jpeg" class="brand-logo-img" alt="brand one three"></div>
-                                    <!-- <div class="brand-origin"><img src="assets/mauritius-flag.png"
-                                            class="country-flag"><span class="country-name">Mauritius</span></div> -->
-                                </div>
-                                <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/kenya-flag.png" class="country-flag"><span
-                                        class="country-name">Kenya</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-1.jpeg" class="brand-logo-img" alt="brand one beauty"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/muacate-flag.png" class="country-flag"><span
-                                        class="country-name">Muscat</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-111.jpeg" class="brand-logo-img" alt="brand one wow"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/kuwait-flag.png" class="country-flag"><span
-                                        class="country-name">Kuwait</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-5.jpeg" class="brand-logo-img" alt="brand one move"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/uae-flag.png" class="country-flag"><span
-                                        class="country-name">UAE</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-222.jpeg" class="brand-logo-img" alt="brand one flow"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/india.webp" class="country-flag"><span
-                                        class="country-name">India</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-66.jpeg" class="brand-logo-img" alt="brand one done"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/india.webp" class="country-flag"><span
-                                        class="country-name">India</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-77.jpeg" class="brand-logo-img" alt="brand one 77"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/india.webp" class="country-flag"><span
-                                        class="country-name">India</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-44.jpeg" class="brand-logo-img" alt="brand one here"></div>
-                            </div>
-                            <div class="brand-unit row-1-style">
-                                <!-- <div class="brand-origin"><img src="assets/india.webp" class="country-flag"><span
-                                        class="country-name">India</span></div> -->
-                                <div class="brand-card"><img src="assets/brand-55.jpeg" class="brand-logo-img" alt="brand one logo"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="brands-slider-row row-2" data-direction="ltr">
-                        <div class="brands-slider-track">
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-99.jpeg" class="brand-logo-img" alt="brand one ten"></div>
-                                <!-- <div class="brand-origin"><img src="assets/mauritius-flag.png"
-                                        class="country-flag"><span class="country-name">Mauritius</span></div> -->
-                            </div>
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-666.jpeg" class="brand-logo-img" alt="brand one seven"></div>
-                                <!-- <div class="brand-origin"><img src="assets/kuwait-flag.png" class="country-flag"><span
-                                        class="country-name">Kuwait</span></div> -->
-                            </div>
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-4.jpeg" class="brand-logo-img" alt="brand one eight"></div>
-                                <!-- <div class="brand-origin"><img src="assets/muacate-flag.png" class="country-flag"><span
-                                        class="country-name">Muscat</span></div> -->
-                            </div>
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-444.jpeg" class="brand-logo-img" alt="brand one four"></div>
-                                <!-- <div class="brand-origin"><img src="assets/tanzania-flag.png" class="country-flag"><span
-                                        class="country-name">Tanzania</span></div> -->
-                            </div>
-                            
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-555.jpeg" class="brand-logo-img" alt="brand one six"></div>
-                                <!-- <div class="brand-origin"><img src="assets/uae-flag.png" class="country-flag"><span
-                                        class="country-name">UAE</span></div> -->
-                            </div>
-                            
-                            
-                            <div class="brand-unit row-1-style">
-                           <!-- <div class="brand-origin"><img src="assets/mauritius-flag.png"
-                                   class="country-flag"><span class="country-name">Mauritius</span></div> -->
-                           <div class="brand-card"><img src="assets/brand-3.jpeg" class="brand-logo-img" alt="brand one salon three"></div>
-                       </div>
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-132.jpeg" class="brand-logo-img" alt="brand one two"></div>
-                                <!-- <div class="brand-origin"><img src="assets/muacate-flag.png" class="country-flag"><span
-                                    class="country-name">Muscat</span></div> -->
-                                </div>
-                               
-                            <div class="brand-unit row-2-style">
-                                <div class="brand-card"><img src="assets/brand-901.jpeg" class="brand-logo-img" alt="brand one five"></div>
-                                <!-- <div class="brand-origin"><img src="assets/kenya-flag.png" class="country-flag"><span
-                                        class="country-name">Kenya</span></div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</section>
 
 
 
-            <div class="growth-header-wrap scroll-animate fade-up">
-                <img src="assets/left-sparkle.png" class="marketing-sparkle sparkle-left" alt="sparkle sparkling">
-                <h2 class="growth-main-title">Unlock Business Growth with Effective Marketing Tools</h2>
-                <img src="assets/right-sparkle.png" class="marketing-sparkle sparkle-right" alt="sparkle sparkling">
-            </div>
-        </div>
-        </div>
-
-
-        <div class="marketing-white-bg">
-            <div class="container text-center">
-
-                <div class="marketing-features-rows">
-
-                    <div class="marketing-thread-line">
-                        <div class="marketing-thread-progress"></div>
-                    </div>
-
-
-                    <div class="marketing-tick tick-start"><i class="bi bi-scissors"></i></div>
-
-
-                    <div class="marketing-row">
-                        <div class="marketing-img-col scroll-animate slide-left">
-
-                            <img src="assets/image-11.jpeg" alt="Marketing Feature 1" class="marketing-feature-img">
-
-                        </div>
-                        <div class="marketing-tick"><i class="fa-solid fa-spray-can-sparkles"></i></div>
-                        <div class="marketing-text-col scroll-animate drop-down">
-                            <h3 class="marketing-feature-title">Drive Growth with Smart Referral, Campaigns & Scheduling
-
-                            </h3>
-                            <div class="marketing-feature-content">
-
-
-                                <p><strong>Referral Rewards</strong> automates tracking & sharing, boosting loyalty,
-                                    leads, insights, and growth efficiently.</p>
-                                <p><strong>Text & Email Campaigns </strong> automate personalized messaging, boosting
-                                    bookings, reducing no-shows, and driving ROI.</p>
-                                <p><strong>Digital Appointment Scheduling</strong> enables 24/7 bookings with real-time
-                                    sync, reminders, and efficient staff management.</p>
-                                <p><strong>AI-Powered Customer Engagement</strong> unifies channels, automates
-                                    follow-ups, and converts customers efficiently.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="marketing-row row-reverse">
-                        <div class="marketing-img-col scroll-animate slide-right">
-                            <img src="assets/image-22.png" alt="Marketing Feature 2"
-                                class="marketing-feature-img has-shadow">
-                        </div>
-                        <div class="marketing-tick"><i class="fa-solid fa-spa"></i></div>
-                        <div class="marketing-text-col scroll-animate drop-down">
-                            <h3 class="marketing-feature-title">Strengthen Client Loyalty</h3>
-                            <div class="marketing-feature-content">
-                                <p><strong>Loyalty Reward Points
-                                    </strong> automate earning & redemption, driving repeat visits, higher spending, and
-                                    engagement.</p>
-                                <p><strong>Digital Wallet & Service Packages</strong> boost cash flow, automate
-                                    payments, reduce errors, and drive growth.</p>
-                                <p><strong>Automatic Service Alerts </strong> send personalized messages, reducing
-                                    no-shows & boosting repeat bookings and retention.</p>
-                                <p><strong>WhatsApp-Enabled Communication</strong> automates reminders, messaging,
-                                    campaigns & invoicing to boost bookings and engagement.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="marketing-row">
-                        <div class="marketing-img-col scroll-animate slide-left">
-                            <img src="assets/image-33.png" alt="Marketing Feature 3" class="marketing-feature-img">
-                        </div>
-                        <div class="marketing-tick"><i class="fa-solid fa-pump-soap"></i></div>
-                        <div class="marketing-text-col scroll-animate drop-down">
-                            <h3 class="marketing-feature-title">Smart Reports for Growth</h3>
-                            <div class="marketing-feature-content">
-                                <p><strong>Daily Insights</strong> deliver automated sales and performance updates for
-                                    faster, smarter decisions.
-                                </p>
-                                <p><strong>Service Performance Reports</strong> deliver real-time staff, revenue, and
-                                    productivity insight for smarter decisions.</p>
-                                <p><strong>20+ Visual Reports</strong> deliver real-time staff, revenue, and performance
-                                    insights for smarter management.</p>
-                                <p><strong>Recurring Payment Gateways</strong> automate renewals, reduce churn, and
-                                    ensure predictable multi-location revenue.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="marketing-tick tick-end"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                </div>
-            </div>
-        </div>
 
 
 
-        <div class="bottom-gradient-cta">
-            <div class="container text-center">
-                <button class="btn-demo btn-try-final scroll-animate zoom-in" data-bs-toggle="modal"
-                    data-bs-target="#ModalTogglesix">
-                    Schedule a Live Demo
-                    <span></span><span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
 
     <div class="reviews-section">
         <div class="container text-center">
@@ -809,328 +705,10 @@
     </div>
 
 
-    <div class="features-master-wrapper">
-        <div class="big-clouds-flow-container">
-            <div class="clouds-track">
-                <img src="assets/big-cloud-1.png" class="big-cloud-item" alt="clouds">
-                <img src="assets/big-cloud-2.png" class="big-cloud-item" alt="clouds moving">
-                <!-- Duplicate for Loop -->
-                <img src="assets/big-cloud-1.png" class="big-cloud-item" alt="clouds moving">
-                <img src="assets/big-cloud-2.png" class="big-cloud-item" alt="clouds moving">
-            </div>
-        </div>
-
-        <div class="revenue-retention-block">
-            <div class="container text-center">
-                <div class="sparkle-container">
-                    <img src="assets/left-sparkle.png" class="sparkle-pos-left" alt="clouds moving">
-                    <div class="stars-galaxy-container">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                    </div>
-                </div>
-                <h2 class="overview-title scroll-animate drop-down">Strengthen Profits & Nurture Client Loyalty</h2>
-                <div class="overview-grid row justify-content-center">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/member-box-icon2.png" alt="Membership">
-                            </div>
-                            <h3 class="box-title">Customizable Membership Plans</h3>
-                            <p class="box-desc">
-                                Membership plans help salon owners secure recurring revenue & boost client loyalty.
-                                Featuring customizable tiers, auto-renewals, real-time tracking, multi-branch access,
-                                plus integrated reminders, it drives renewals and predictable growth.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/member-box-icon3.png" alt="Reward points">
-                            </div>
-                            <h3 class="box-title">Credit Points & Wallet</h3>
-                            <p class="box-desc">
-                                Credit Points & Wallet drives repeat visits, advance payments, or client loyalty without
-                                impacting profits. With automated points, customizable rules, WhatsApp updates &
-                                seamless integration, salons enjoy faster checkouts and steady revenue.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/member-box-icon.png" alt="Appointments">
-                            </div>
-                            <h3 class="box-title">Instant Appointment Scheduling</h3>
-                            <p class="box-desc">
-                                Online appointments enable 24/7 booking with real-time availability or smart staff
-                                allocation via instant WhatsApp alerts. Integrated with memberships, packages, wallet
-                                payments & multi-branch control, it boosts bookings and client satisfaction.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="management-block">
-            <div class="container text-center">
-                <div class="sparkle-container">
-                    <img src="assets/right-sparkle.png" class="sparkle-pos-right-mgmt" alt="right sparkle of boxes">
-                </div>
-                <h2 class="overview-title scroll-animate drop-down">Automated Salon & Spa <br>Management Transformation</h2>
-
-                <div class="overview-grid-9 row">
-                    <!-- Billing -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon7.png" alt="Feedback">
-                                
-                            </div>
-                            <h3 class="box-title">Inquiry Handling Workflow</h3>
-                            <p class="box-desc">
-                                Inquiry Management captures, tracks, and follows up on leads with instant staff alerts
-                                or WhatsApp responses with intelligent automated reminders. It boosts conversion,
-                                enhances accountability & turns inquiries into paying customers.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Feedback -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon.png" alt="Billing">
-                            </div>
-                            <h3 class="box-title"> Smart Payments</h3>
-                            <p class="box-desc">
 
 
-                                Smart Billing simplifies invoicing with automatic GST/VAT, multiple payment options &
-                                membership integration. It offers WhatsApp invoices, staff incentives, discount
-                                controls, and real-time reports for professional checkouts.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Inquiry -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon8.png" alt="Inquiry">
-                            </div>
-                            <h3 class="box-title">Unified Customer History</h3>
-                            <p class="box-desc">
 
 
-                                Unified Customer History gives salon owners a 360° view of every client across branches,
-                                covering visits, services, billing, packages, and memberships in one dashboard. It
-                                boosts retention & ensures seamless experiences.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Marketing -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon5.png" alt="Marketing">
-                            </div>
-                            <h3 class="box-title">Commission & Payroll Management</h3>
-                            <p class="box-desc">
-
-
-                                Staff Commission and Payroll automates commission or salary processing by linking
-                                payouts to billing, services & attendance. With customizable rules, clear reports and
-                                multi-branch management, it reduces errors or streamlines operations.
-
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Retain -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon9.png" alt="Unlimited">
-                            </div>
-                            <h3 class="box-title">Multi-Location & Franchise Management</h3>
-                            <p class="box-desc">
-
-                                Multi-Branch & Franchise Management provides centralized control over sales, staff,
-                                inventory, pricing, and marketing. With role-based access, branch tracking &
-                                memberships, it enables efficient expansion and profitability.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Stock -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon2.png" alt="Stock">
-                            </div>
-                            <h3 class="box-title">Automated WhatsApp Campaigns</h3>
-                            <p class="box-desc">
-
-
-                                Automated WhatsApp Campaigns let salon owners send personalized reminders, offers, and
-                                reactivation messages instantly. Segment clients by preference or inactivity to boost
-                                bookings, reduce no-shows & strengthen loyalty.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Payroll -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon4.png" alt="Payroll">
-                            </div>
-                            <h3 class="box-title"> Results-Driven Marketing</h3>
-                            <p class="box-desc">
-
-
-                                Results-Driven Marketing empowers salon owners to run targeted campaigns via WhatsApp,
-                                text, or email. With smart segmentation, automatic triggers & templates with real-time
-                                tracking, it boosts repeat visits and revenue.
-
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Reports -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon3.png" alt="Reports">
-                            </div>
-                            <h3 class="box-title"> Client Retention Strategy
-                            </h3>
-                            <p class="box-desc">
-
-
-                                The Client Retention Strategy reduces drop-offs & builds loyalty with data-driven
-                                reminders, personalized follow-ups, and reactivation workflows. Integrated with loyalty
-                                points, memberships & analytics, it converts visitors into repeat clients.</p>
-                        </div>
-                    </div>
-                    <!-- Unlimited -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="feature-overview-box scroll-animate fade-up">
-                            <div class="box-icon-wrap">
-                                <img src="assets/billing-icon6.png" alt="Retain">
-                            </div>
-                            <h3 class="box-title">Simplified Stock Management</h3>
-                            <p class="box-desc">
-
-
-                                Simplified Stock Management offers salon owners real-time inventory control with
-                                automatic updates, low-stock alerts & expiry warnings. Integrated with billing and
-                                multi-branch management, it minimizes wastage and ensures availability.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer-section">
         <div class="stars-galaxy-container">
